@@ -49,14 +49,14 @@
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="post-heading">
-              <h1>Setup python on macOS and visual studio code</h1>
+              <h1>Install gfortran and compile fortran code on Linux</h1>
               
               <!--
               <h2 class="subheading">Problems look mighty small from 150 miles up</h2>
               -->
               <span class="meta">Posted by
                 <a href="#">Haokai Yang</a>
-                on August 24, 2017</span>
+                on August 30, 2017</span>
             </div>
           </div>
         </div>
@@ -68,21 +68,18 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
-            <p>1. Install python 2
+            <p>1. In terminal, type: sudo apt-get install gfortran
             </p>
-            <p>2. Install Xcode and Command Line Tools</p>
-            <p>3. Install Homebrew</p>
-            <p>Terminal command: /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</p>
-            <p>4. Install PIP via terminal command:sudo easy_install pip</p>
-            <p>5. Install VS Code and install python extension</p>
+            <p>2. Compile and run fortran: gfortran -c CDT.for (if you have more files, do the main file last.)</p>
+            <p>    gfortran -c main.for CDT.o -o main.exe</p>
+            <p>3. Or: gfortran -o filename main.for CDT.for</p>
+            <p>PS: all the files should be in one directory</p>
+  
 
 
 
-            <!--
-            <p>Placeholder text by
-              <a href="http://spaceipsum.com/">Space Ipsum</a>. Photographs by
-              <a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>.</p>
-            -->
+
+          
           </div>
         </div>
       </div>
